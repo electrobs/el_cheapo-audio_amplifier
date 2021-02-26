@@ -8,6 +8,8 @@
     DETAILS: Cheap 2N3055 amplifier using old power supplies for the base.   
 ---
 
+:warning: **WIP**
+
 ### DIRECTORY
 #### models
 3D models
