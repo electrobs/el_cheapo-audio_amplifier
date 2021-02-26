@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "EL CHEAPO"
+Date "2021-01-05"
+Rev "0.1"
+Comp "JDC"
+Comment1 "Author: John Convertino"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:AC #PWR05
+U 1 1 5FF5BB52
+P 2800 3650
+F 0 "#PWR05" H 2800 3550 50  0001 C CNN
+F 1 "AC" V 2800 3879 50  0000 L CNN
+F 2 "" H 2800 3650 50  0001 C CNN
+F 3 "" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:AC #PWR06
+U 1 1 5FF5BEC5
+P 2800 4050
+F 0 "#PWR06" H 2800 3950 50  0001 C CNN
+F 1 "AC" V 2800 4279 50  0000 L CNN
+F 2 "" H 2800 4050 50  0001 C CNN
+F 3 "" H 2800 4050 50  0001 C CNN
+	1    2800 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T1
+U 1 1 5FF5C2AA
+P 4200 3850
+F 0 "T1" H 4200 4231 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 4200 4140 50  0000 C CNN
+F 2 "" H 4200 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 5FF5CF04
+P 3500 3650
+F 0 "F1" V 3303 3650 50  0000 C CNN
+F 1 "1A" V 3394 3650 50  0000 C CNN
+F 2 "" V 3430 3650 50  0001 C CNN
+F 3 "~" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5FF5E51B
+P 3100 3650
+F 0 "SW1" H 3100 3885 50  0000 C CNN
+F 1 "SW_SPST" H 3100 3794 50  0000 C CNN
+F 2 "" H 3100 3650 50  0001 C CNN
+F 3 "~" H 3100 3650 50  0001 C CNN
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D1
+U 1 1 5FF60C12
+P 5000 3850
+F 0 "D1" H 5350 3900 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5350 4000 50  0000 L CNN
+F 2 "" H 5000 3850 50  0001 C CNN
+F 3 "~" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3650 4600 3550
+Wire Wire Line
+	4600 3550 5000 3550
+Wire Wire Line
+	4600 4150 4600 4050
+$Comp
+L Device:CP C1
+U 1 1 5FF6219C
+P 5800 4400
+F 0 "C1" H 5800 4300 50  0000 L CNN
+F 1 "5600uF" H 5800 4200 50  0000 L CNN
+F 2 "" H 5838 4250 50  0001 C CNN
+F 3 "~" H 5800 4400 50  0001 C CNN
+	1    5800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP42C Q1
+U 1 1 5FF6388A
+P 6700 3950
+F 0 "Q1" V 7028 3950 50  0000 C CNN
+F 1 "TIP32A" V 6937 3950 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6950 3875 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 6700 3950 50  0001 L CNN
+	1    6700 3950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FF6517C
+P 6350 4200
+F 0 "R1" H 6420 4246 50  0000 L CNN
+F 1 "820R 2W" H 6350 4050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 6280 4200 50  0001 C CNN
+F 3 "~" H 6350 4200 50  0001 C CNN
+	1    6350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5FF65E0D
+P 6350 4800
+F 0 "C3" H 6468 4846 50  0000 L CNN
+F 1 "10uF" H 6468 4755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6388 4650 50  0001 C CNN
+F 3 "~" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5FF67AC3
+P 7350 4400
+F 0 "C4" H 7468 4446 50  0000 L CNN
+F 1 "1000uF" H 7468 4355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 7388 4250 50  0001 C CNN
+F 3 "~" H 7350 4400 50  0001 C CNN
+	1    7350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5FF68D97
+P 7150 5450
+F 0 "#PWR07" H 7150 5200 50  0001 C CNN
+F 1 "GND" H 7155 5277 50  0000 C CNN
+F 2 "" H 7150 5450 50  0001 C CNN
+F 3 "" H 7150 5450 50  0001 C CNN
+	1    7150 5450
+	1    0    0    -1  
+$EndComp
+Text HLabel 7800 5450 2    50   Output ~ 0
+GND
+Text HLabel 7800 3850 2    50   Output ~ 0
++V
+Wire Wire Line
+	2800 3650 2900 3650
+Wire Wire Line
+	3300 3650 3350 3650
+Wire Wire Line
+	3650 3650 3800 3650
+Wire Wire Line
+	3800 4050 2800 4050
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5FF76D53
+P 6900 4350
+F 0 "Q2" V 7228 4350 50  0000 C CNN
+F 1 "2N3904" V 7137 4350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Wide" H 7100 4275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6900 4350 50  0001 L CNN
+	1    6900 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 4250 7350 3850
+Wire Wire Line
+	6900 4650 6900 4600
+Wire Wire Line
+	6700 4250 6700 4150
+Wire Wire Line
+	7100 4250 7100 3850
+Connection ~ 7100 3850
+Wire Wire Line
+	6900 4600 6350 4600
+Connection ~ 6900 4600
+Wire Wire Line
+	6900 4600 6900 4550
+Wire Wire Line
+	6350 4600 6350 4650
+Wire Wire Line
+	6350 3850 6350 4050
+Connection ~ 6350 3850
+Wire Wire Line
+	6350 4350 6350 4600
+Connection ~ 6350 4600
+Wire Wire Line
+	5500 4350 5650 4350
+Wire Wire Line
+	5650 4350 5650 3850
+Wire Wire Line
+	5500 4450 5650 4450
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FF9B14D
+P 5300 4450
+F 0 "J1" H 5218 4125 50  0000 C CNN
+F 1 "Conn_01x02" H 5218 4216 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 5300 4450 50  0001 C CNN
+F 3 "~" H 5300 4450 50  0001 C CNN
+	1    5300 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5FF9EB6E
+P 6700 3300
+F 0 "HS1" H 6842 3421 50  0000 L CNN
+F 1 "Heatsink" H 6842 3330 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm" H 6712 3300 50  0001 C CNN
+F 3 "~" H 6712 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FFA1DF1
+P 6150 4400
+F 0 "C2" H 5900 4600 50  0000 L CNN
+F 1 "100nF" H 5900 4500 50  0000 L CNN
+F 2 "" H 6188 4250 50  0001 C CNN
+F 3 "~" H 6150 4400 50  0001 C CNN
+	1    6150 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 5450
+Wire Wire Line
+	5650 5450 5800 5450
+Wire Wire Line
+	5800 4250 5800 3850
+Connection ~ 5650 3850
+Wire Wire Line
+	5650 3850 5800 3850
+Wire Wire Line
+	6150 4250 6150 3850
+Connection ~ 6150 3850
+Wire Wire Line
+	6150 3850 6350 3850
+Connection ~ 6150 5450
+Connection ~ 5800 3850
+Wire Wire Line
+	5800 3850 6150 3850
+Connection ~ 5800 5450
+Wire Wire Line
+	5800 5450 6150 5450
+Wire Wire Line
+	5300 3850 5650 3850
+Wire Wire Line
+	4700 5450 5650 5450
+$Comp
+L Device:Fuse F2
+U 1 1 5FFBA298
+P 7550 3850
+F 0 "F2" V 7353 3850 50  0000 C CNN
+F 1 "2A" V 7444 3850 50  0000 C CNN
+F 2 "Fuse:Fuse_Blade_ATO_directSolder" V 7480 3850 50  0001 C CNN
+F 3 "~" H 7550 3850 50  0001 C CNN
+	1    7550 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3850 7800 3850
+Connection ~ 7350 3850
+Wire Wire Line
+	7350 3850 7400 3850
+Connection ~ 7350 5450
+Wire Wire Line
+	7350 5450 7800 5450
+Wire Wire Line
+	7150 5450 7350 5450
+Wire Wire Line
+	7100 3850 7350 3850
+$Comp
+L Device:D_Zener D2
+U 1 1 5FF6573A
+P 6900 4800
+F 0 "D2" V 6854 4879 50  0000 L CNN
+F 1 "39" V 6945 4879 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6900 4800 50  0001 C CNN
+F 3 "~" H 6900 4800 50  0001 C CNN
+	1    6900 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 4550 7350 5450
+Wire Wire Line
+	6150 5450 6350 5450
+Connection ~ 7150 5450
+Wire Wire Line
+	6350 4950 6350 5450
+Connection ~ 6350 5450
+Wire Wire Line
+	6350 5450 6900 5450
+Wire Wire Line
+	6150 4550 6150 5450
+Wire Wire Line
+	5800 4550 5800 5450
+Wire Wire Line
+	5650 4450 5650 5450
+Connection ~ 6900 5450
+Wire Wire Line
+	6900 5450 7150 5450
+Wire Wire Line
+	4600 4150 5000 4150
+Wire Wire Line
+	4700 3850 4700 5450
+Wire Wire Line
+	6900 4950 6900 5450
+Wire Wire Line
+	6350 3850 6500 3850
+Wire Wire Line
+	6900 3850 7100 3850
+$EndSCHEMATC

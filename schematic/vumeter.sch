@@ -1,0 +1,181 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 4 4
+Title "EL CHEAPO"
+Date "2021-01-05"
+Rev "0.1"
+Comp "JDC"
+Comment1 "Author: John Convertino"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D6
+U 1 1 5FE4D120
+P 6100 2950
+F 0 "D6" H 6100 3166 50  0000 C CNN
+F 1 "1N914" H 6100 3075 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6100 2950 50  0001 C CNN
+F 3 "~" H 6100 2950 50  0001 C CNN
+	1    6100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5FE4DEB2
+P 5800 3300
+F 0 "C12" H 5850 3500 50  0000 L CNN
+F 1 "0.1uF" H 5850 3400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L22.0mm_D9.5mm_P27.50mm_Horizontal" H 5838 3150 50  0001 C CNN
+F 3 "~" H 5800 3300 50  0001 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5FE4E221
+P 7050 2950
+F 0 "R18" V 6843 2950 50  0000 C CNN
+F 1 "1k_100k 1W" V 6934 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6980 2950 50  0001 C CNN
+F 3 "~" H 7050 2950 50  0001 C CNN
+	1    7050 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5FE4E613
+P 5400 2950
+F 0 "RV2" V 5193 2950 50  0000 C CNN
+F 1 "1k_100K" V 5284 2950 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 5400 2950 50  0001 C CNN
+F 3 "~" H 5400 2950 50  0001 C CNN
+	1    5400 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Amperemeter_DC MES1
+U 1 1 5FE4E9B3
+P 4850 3450
+F 0 "MES1" H 5003 3496 50  0000 L CNN
+F 1 "Amperemeter_DC" H 5003 3405 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 4850 3550 50  0001 C CNN
+F 3 "~" V 4850 3550 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2950 5200 2950
+Wire Wire Line
+	4850 2950 4850 3250
+Wire Wire Line
+	5400 3100 5200 3100
+Wire Wire Line
+	5200 3100 5200 2950
+Connection ~ 5200 2950
+Wire Wire Line
+	5200 2950 4850 2950
+$Comp
+L Device:Lamp LA1
+U 1 1 5FE654C8
+P 4850 4500
+F 0 "LA1" H 4978 4546 50  0000 L CNN
+F 1 "Lamp" H 4978 4455 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 4850 4600 50  0001 C CNN
+F 3 "~" V 4850 4600 50  0001 C CNN
+	1    4850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5FE6605D
+P 6550 4700
+F 0 "R17" V 6343 4700 50  0000 C CNN
+F 1 "470R 2W" V 6434 4700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W9.0mm_P27.94mm" V 6480 4700 50  0001 C CNN
+F 3 "~" H 6550 4700 50  0001 C CNN
+	1    6550 4700
+	0    1    1    0   
+$EndComp
+Text HLabel 7200 2950 2    50   Input ~ 0
+AUDIO_IN
+Text HLabel 7200 3700 2    50   Input ~ 0
+GND
+Text HLabel 7200 4700 2    50   Input ~ 0
++V
+$Comp
+L power:GND #PWR09
+U 1 1 5FE6F779
+P 7200 4300
+F 0 "#PWR09" H 7200 4050 50  0001 C CNN
+F 1 "GND" H 7205 4127 50  0000 C CNN
+F 2 "" H 7200 4300 50  0001 C CNN
+F 3 "" H 7200 4300 50  0001 C CNN
+	1    7200 4300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4850 4300
+Wire Wire Line
+	4850 3650 4850 4300
+$Comp
+L Device:CP C13
+U 1 1 603254A4
+P 6650 2950
+F 0 "C13" V 6395 2950 50  0000 C CNN
+F 1 "10uF" V 6486 2950 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6688 2800 50  0001 C CNN
+F 3 "~" H 6650 2950 50  0001 C CNN
+	1    6650 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 2950 6800 2950
+Wire Wire Line
+	4850 4300 5800 4300
+Wire Wire Line
+	4850 4700 6400 4700
+Wire Wire Line
+	6700 4700 7200 4700
+Wire Wire Line
+	6250 2950 6350 2950
+Wire Wire Line
+	5550 2950 5800 2950
+Wire Wire Line
+	5800 3150 5800 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5950 2950
+Wire Wire Line
+	5800 3450 5800 3700
+Wire Wire Line
+	5800 3700 5800 4300
+Connection ~ 5800 3700
+Connection ~ 5800 4300
+Wire Wire Line
+	5800 3700 6350 3700
+Wire Wire Line
+	5800 4300 7200 4300
+$Comp
+L Device:D D7
+U 1 1 603345F0
+P 6350 3100
+F 0 "D7" H 6350 3316 50  0000 C CNN
+F 1 "1N914" H 6350 3225 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6350 3100 50  0001 C CNN
+F 3 "~" H 6350 3100 50  0001 C CNN
+	1    6350 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 6350 2950
+Wire Wire Line
+	6350 2950 6500 2950
+Wire Wire Line
+	6350 3250 6350 3700
+Connection ~ 6350 3700
+Wire Wire Line
+	6350 3700 7200 3700
+$EndSCHEMATC
