@@ -34,17 +34,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 3950 5350 3950
 $Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5FF6D28D
-P 8900 5700
-F 0 "H5" H 9000 5749 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9000 5658 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 8900 5700 50  0001 C CNN
-F 3 "~" H 8900 5700 50  0001 C CNN
-	1    8900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5FF6D518
 P 8050 5700
@@ -72,7 +61,7 @@ U 1 1 5FF6DB70
 P 6250 5700
 F 0 "H2" H 6350 5749 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6350 5658 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6250 5700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3x6.2mm_M4_Pad" H 6250 5700 50  0001 C CNN
 F 3 "~" H 6250 5700 50  0001 C CNN
 	1    6250 5700
 	1    0    0    -1  
@@ -83,54 +72,13 @@ U 1 1 5FF6DCDD
 P 5350 5700
 F 0 "H1" H 5450 5749 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5450 5658 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5350 5700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3x6.2mm_M4_Pad" H 5350 5700 50  0001 C CNN
 F 3 "~" H 5350 5700 50  0001 C CNN
 	1    5350 5700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5FF7B5BA
-P 5350 5800
-F 0 "#PWR01" H 5350 5550 50  0001 C CNN
-F 1 "GND" H 5355 5627 50  0000 C CNN
-F 2 "" H 5350 5800 50  0001 C CNN
-F 3 "" H 5350 5800 50  0001 C CNN
-	1    5350 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5FF7B7FD
-P 6250 5800
-F 0 "#PWR02" H 6250 5550 50  0001 C CNN
-F 1 "GND" H 6255 5627 50  0000 C CNN
-F 2 "" H 6250 5800 50  0001 C CNN
-F 3 "" H 6250 5800 50  0001 C CNN
-	1    6250 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5FF7BAAE
-P 7150 5800
-F 0 "#PWR03" H 7150 5550 50  0001 C CNN
-F 1 "GND" H 7155 5627 50  0000 C CNN
-F 2 "" H 7150 5800 50  0001 C CNN
-F 3 "" H 7150 5800 50  0001 C CNN
-	1    7150 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5FF7BB99
-P 8050 5800
-F 0 "#PWR04" H 8050 5550 50  0001 C CNN
-F 1 "GND" H 8055 5627 50  0000 C CNN
-F 2 "" H 8050 5800 50  0001 C CNN
-F 3 "" H 8050 5800 50  0001 C CNN
-	1    8050 5800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8900 5800
+NoConn ~ 8050 5800
+NoConn ~ 7150 5800
+NoConn ~ 6250 5800
+NoConn ~ 5350 5800
 $EndSCHEMATC

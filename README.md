@@ -1,11 +1,11 @@
 # EL CHEAPO AMP
 
 ---
-    AUTHOR: R.R. Moore (original design), John Convertino(revised)   
+    AUTHOR: R.R. Moore (original design), Jay Convertino(revised)   
     
-    DATE: 2020.12.23   
+    DATE: 2021.07.13
     
-    DETAILS: Cheap 2N3055 amplifier using old power supplies for the base.   
+    DETAILS: Cheap 2N3055 amplifier using Dynaco Amp for Base.  
 ---
 
 ### DIRECTORY
