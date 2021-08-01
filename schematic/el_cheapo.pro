@@ -1,4 +1,4 @@
-update=Wed 24 Feb 2021 08:56:25 PM EST
+update=Sun 01 Aug 2021 05:25:29 PM EDT
 version=1
 last_client=kicad
 [general]
@@ -248,6 +248,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=opamp
+Clearance=0.5334
+TrackWidth=0.762
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=power
 Clearance=0.79375
 TrackWidth=2.032
@@ -258,7 +269,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
 Name=power_signal
 Clearance=0.5334
 TrackWidth=1.524
@@ -269,7 +280,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/3]
+[pcbnew/Netclasses/4]
 Name=signal
 Clearance=0.79375
 TrackWidth=1.016
@@ -280,7 +291,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/4]
+[pcbnew/Netclasses/5]
 Name=trans_power
 Clearance=0.5334
 TrackWidth=2.032
@@ -291,7 +302,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/5]
+[pcbnew/Netclasses/6]
 Name=trans_power_signal
 Clearance=0.5334
 TrackWidth=1.524
