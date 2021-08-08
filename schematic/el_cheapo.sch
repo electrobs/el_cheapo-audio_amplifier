@@ -34,17 +34,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 3950 5350 3950
 $Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5FF6D28D
-P 8900 5700
-F 0 "H5" H 9000 5749 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9000 5658 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 8900 5700 50  0001 C CNN
-F 3 "~" H 8900 5700 50  0001 C CNN
-	1    8900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5FF6D518
 P 8050 5700
@@ -132,5 +121,4 @@ F 3 "" H 8050 5800 50  0001 C CNN
 	1    8050 5800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8900 5800
 $EndSCHEMATC
