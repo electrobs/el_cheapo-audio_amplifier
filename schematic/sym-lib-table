@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "el_cheapo-rescue")(type "KiCad")(uri "${KIPRJMOD}/el_cheapo-rescue.kicad_sym")(options "")(descr ""))
+)
